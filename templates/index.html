@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'zbek Tili Morfoanalizatori</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li> mumkin: mumkin (Mod; modal so‘zlar) </li>
+            <li> hisoblanmoq: hisoblanmoq (V; fe’l) </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>O'zbek Tili Morfoanalizatori</h1>
+        <form id="analyzeForm">
+            <textarea id="inputText" name="input_text" placeholder="Matn kiriting..."></textarea>
+            <button type="submit">Analiz Qilish</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
